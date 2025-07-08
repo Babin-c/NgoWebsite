@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery || NGO ORG || Dhangadhi</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <i class="fas fa-phone-alt me-2"></i>
+                            <a href="tel:+1234567890">+977 788455455</a>
+                        </div>
+                        <div>
+                            <i class="fas fa-envelope me-2"></i>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-md-end mt-2 mt-md-0">
+                    <div class="social-icons d-inline-block">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-building me-2"></i>NGO ORG
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="video.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                 <a href="donate.html" class="btn btn-success rounded-5">
+                    <i class="fas fa-heart me-2"></i> Donate
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-title light-background">
+        <div class="background-image-wrapper">
+            <div class="overlay"></div>
+            <div class="container">
+                <h1>NGO ORG</h1>
+                <nav class="breadcrumbs">
+                    <ol>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="current">Images Gallery</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+        <h2 class="section-title mt-4">Image Gallery</h2>
+
+        <div class="thumbnail-grid">
+
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+        <div class="lightbox-nav">
+            <button class="lightbox-prev">&#10094;</button>
+            <button class="lightbox-next">&#10095;</button>
+        </div>
+    </div>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h5>About Us</h5>
+                    <p class="text-secondary">We are a non-profit organization dedicated to empowering the deaf
+                        community
+                        through education, advocacy, and equal opportunities.</p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links ps-0">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="gallery.html">Images</a></li>
+                        <li><a href="video.html">Videos</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Contact Info</h5>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Dhangadhi - 57, Nepal</p>
+                        </p>
+                        <p><i class="fas fa-phone-alt"></i> +977 9845745112</p>
+                        <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to our newsletter to receive updates and exclusive offers.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="footer-social d-flex">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="col-md-12 align-items-center">
+                    <div class="footer-copyright">
+                        <p>&copy; 2023 Powered By BG-Infotechs. All Rights Reserved by Org.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="abc.js"></script>
+</body>
+
+</html>
