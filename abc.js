@@ -42,30 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 // end carousel js
 
-const images = [
-    { src: 'images/App development-bro.png', caption: 'Image 1' },
-    { src: 'images/App development-bro.png', caption: 'Image 2' },
-    { src: 'images/App development-bro.png', caption: 'Image 3' },
-    { src: 'images/App development-bro.png', caption: 'Image 4' },
-    { src: 'images/App development-bro.png', caption: 'Image 5' },
-    { src: 'images/App development-bro.png', caption: 'Image 6' },
-    { src: 'images/App development-bro.png', caption: 'Image 7' },
-    { src: 'images/App development-bro.png', caption: 'Image 8' },
-    { src: 'images/App development-bro.png', caption: 'Image 9' },
-    { src: 'images/App development-bro.png', caption: 'Image 10' },
-    { src: 'images/App development-bro.png', caption: 'Image 11' },
-    { src: 'images/App development-bro.png', caption: 'Image 12' },
-    { src: 'images/App development-bro.png', caption: 'Image 13' },
-    { src: 'images/App development-bro.png', caption: 'Image 14' },
-    { src: 'images/App development-bro.png', caption: 'Image 15' },
-    { src: 'images/App development-bro.png', caption: 'Image 16' },
-    { src: 'images/App development-bro.png', caption: 'Image 17' },
-    { src: 'images/App development-bro.png', caption: 'Image 18' },
-    { src: 'images/App development-bro.png', caption: 'Image 19' },
-    { src: 'images/App development-bro.png', caption: 'Image 20' },
-];
-
-// Initialize the gallery
 document.addEventListener('DOMContentLoaded', function () {
     const thumbnailGrid = document.querySelector('.thumbnail-grid');
     const lightbox = document.querySelector('.lightbox');
@@ -75,22 +51,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const lightboxPrev = document.querySelector('.lightbox-prev');
     const lightboxNext = document.querySelector('.lightbox-next');
 
+    // Get all thumbnail images from HTML
+    const thumbnails = document.querySelectorAll('.thumbnail img');
     let currentImageIndex = 0;
 
-    // Create thumbnails
-    images.forEach((image, index) => {
-        const thumbnail = document.createElement('div');
-        thumbnail.className = 'thumbnail';
+    // Convert NodeList to array of image data
+    const images = Array.from(thumbnails).map(img => ({
+        src: img.src,
+        caption: img.dataset.caption || img.alt
+    }));
 
-        const img = document.createElement('img');
-        img.src = image.src;
-        img.alt = image.caption;
-
-        thumbnail.appendChild(img);
-        thumbnailGrid.appendChild(thumbnail);
-
-        // Add click event to open lightbox
-        thumbnail.addEventListener('click', () => {
+    // Add click event to each thumbnail
+    thumbnails.forEach((img, index) => {
+        img.closest('.thumbnail').addEventListener('click', () => {
             currentImageIndex = index;
             updateLightbox();
             lightbox.classList.add('active');
