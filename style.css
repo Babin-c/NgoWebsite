@@ -890,103 +890,106 @@
 
  /* ......breadcrumb......... */
  .page-title {
-     position: relative;
-     padding: 120px 0;
-     text-align: center;
-     overflow: hidden;
- }
+    position: relative;
+    padding: 120px 0;
+    text-align: center;
+    overflow: hidden;
+}
 
- .page-title .background-image-wrapper {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-size: cover;
-     background-position: center;
-     background-repeat: no-repeat;
-     z-index: 1;
- }
+.page-title .background-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-image: url('/images/hero1.jpg');
+    filter: brightness(0.7);
+}
 
- .page-title .overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background-color: #F0FAF2;
-     z-index: 2;
- }
+.page-title .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 250, 242, 0.85);
+    background-color: #F0FAF2;
+    z-index: 2;
+    background: linear-gradient(to bottom, 
+                rgba(58, 58, 58, 0.5) 0%, 
+                rgba(7, 7, 7, 0.5) 100%);
+}
 
- .page-title .container {
-     position: relative;
-     z-index: 3;
-     padding: 20px;
- }
+.page-title .container {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+}
 
- .page-title h1 {
-     padding-top: 60px;
-     color: #333;
-     font-size: 32px;
-     font-weight: 800;
-     margin-bottom: 15px;
-     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-     /* Darker shadow for better contrast */
- }
+.page-title h1 {
+    padding-top: 60px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
 
- .page-title .breadcrumbs ol {
-     display: inline-flex;
-     flex-wrap: wrap;
-     list-style: none;
-     padding: 8px 16px;
-     margin: 0;
-     font-size: 16px;
-     font-weight: 500;
-     background: #F5F5F5;
-     border-radius: 50px;
-     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
- }
+.page-title .breadcrumbs ol {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 8px 16px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    background: rgba(255, 253, 253, 0.9);
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
- .page-title .breadcrumbs ol li {
-     display: flex;
-     align-items: center;
- }
+.page-title .breadcrumbs ol li {
+    display: flex;
+    align-items: center;
+}
 
- .page-title .breadcrumbs ol li a {
-     color: #4a6cf7;
-     text-decoration: none;
-     transition: all 0.3s ease;
-     display: flex;
-     align-items: center;
- }
+.page-title .breadcrumbs ol li a {
+    color: #4a6cf7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
 
- .page-title .breadcrumbs ol li a:hover {
-     color: #2a4ec7;
- }
+.page-title .breadcrumbs ol li a:hover {
+    color: #2a4ec7;
+}
 
- .page-title .breadcrumbs ol li a i {
-     margin-right: 6px;
-     font-size: 14px;
- }
+.page-title .breadcrumbs ol li a i {
+    margin-right: 6px;
+    font-size: 14px;
+}
 
- .page-title .breadcrumbs ol li.current {
-     color: #6c757d;
-     font-weight: 600;
- }
+.page-title .breadcrumbs ol li.current {
+    color: #4d5358;
+    font-weight: 600;
+}
 
- .page-title .breadcrumbs ol li+li {
-     padding-left: 12px;
- }
+.page-title .breadcrumbs ol li+li {
+    padding-left: 12px;
+}
 
- .page-title .breadcrumbs ol li+li::before {
-     content: "›";
-     display: inline-block;
-     padding-right: 12px;
-     color: #adb5bd;
-     font-size: 18px;
-     vertical-align: middle;
- }
-
+.page-title .breadcrumbs ol li+li::before {
+    content: "›";
+    display: inline-block;
+    padding-right: 12px;
+    color: #adb5bd;
+    font-size: 18px;
+    vertical-align: middle;
+}
  /* ........contact......... */
  .contact-info {
      padding: 20px;
@@ -1449,7 +1452,7 @@
 
  .placeholder-text {
      color: #999;
-      font-style: italic;
+     font-style: italic;
  }
 
  .modal-content {
@@ -1465,4 +1468,278 @@
      transform: translateY(-5px);
      transition: all 0.3s ease;
      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ /*.......... notice-section........ */
+
+ .notice-header {
+     background: #c5fcd0;
+     color: white;
+     padding: 3rem 0;
+     margin-bottom: 2rem;
+     border-radius: 0 0 10px 10px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     position: relative;
+     overflow: hidden;
+ }
+
+ /* Card container adjustments */
+ .row {
+     --bs-gutter-x: 1.5rem;
+     --bs-gutter-y: 1.5rem;
+ }
+
+ /* Notice card styling */
+ .notice-card {
+     border: none;
+     border-radius: 12px;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+     transition: all 0.3s ease;
+     overflow: hidden;
+     position: relative;
+     background: white;
+     margin-bottom: 0;
+     /* Remove this since we're using gutter */
+ }
+
+ .notice-card::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 5px;
+     height: 100%;
+ }
+
+ .notice-card:hover {
+     transform: translateY(-8px);
+     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+ }
+
+ .card-news::before {
+     background: linear-gradient(to bottom, #28a745, #5cb85c);
+ }
+
+ .card-event::before {
+     background: linear-gradient(to bottom, #28a745, #5cb85c);
+ }
+
+ .card-job::before {
+     background: linear-gradient(to bottom, #28a745, #5cb85c);
+ }
+
+ .card-urgent::before {
+     background: linear-gradient(to bottom, #28a745, #5cb85c);
+ }
+
+ .card-body {
+     padding: 1.5rem;
+     position: relative;
+     z-index: 1;
+ }
+
+ /* Badge styling */
+ .badge {
+     padding: 0.35em 0.65em;
+     font-size: 0.75em;
+     font-weight: 600;
+     letter-spacing: 0.5px;
+     border-radius: 0.25rem;
+     text-transform: uppercase;
+ }
+
+ .badge-news {
+     background-color: #28a745;
+     color: white;
+ }
+
+ .badge-event {
+     background-color: #28a745;
+     color: white;
+ }
+
+ .badge-job {
+     background-color: #28a745;
+     color: white;
+ }
+
+ .badge-urgent {
+     background-color: #28a745;
+     color: white;
+ }
+
+ /* Button styling */
+ .btn-outline-primary {
+     border-color: #28a745;
+     color: #28a745;
+ }
+
+ .btn-outline-primary:hover {
+     background-color: #28a745;
+     color: white;
+ }
+
+ .btn-outline-success {
+     border-color: #28a745;
+     color: #28a745;
+ }
+
+ .btn-outline-success:hover {
+     background-color: #28a745;
+     color: white;
+ }
+
+ .btn-outline-warning {
+     border-color: #28a745;
+     color: #28a745;
+ }
+
+ .btn-outline-warning:hover {
+     background-color: #28a745;
+     color: white;
+ }
+
+ .btn-outline-danger {
+     border-color: #28a745;
+     color: #28a745;
+ }
+
+ .btn-outline-danger:hover {
+     background-color: #28a745;
+     color: white;
+ }
+
+ /* Pagination styling */
+ .pagination {
+     margin-top: 2.5rem !important;
+ }
+
+ .page-item.active .page-link {
+     background-color: #0077b6;
+     border-color: #0077b6;
+ }
+
+ .page-link {
+     color: #0077b6;
+ }
+
+ /* Responsive adjustments */
+ @media (max-width: 767.98px) {
+     .notice-header {
+         padding: 2rem 0;
+     }
+
+     .card-body {
+         padding: 1.25rem;
+     }
+ }
+
+ /* .........publications section........ */
+ :root {
+     --primary-green: #2e7d32;
+     --light-green: #81c784;
+     --dark-green: #1b5e20;
+     --accent-green: #a5d6a7;
+     --text-dark: #263238;
+ }
+
+ body {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: var(--text-dark);
+ }
+
+ .hero-section {
+     background: #c5fcd0;
+     color: white;
+     padding: 5rem 0;
+     margin-bottom: 3rem;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .hero-section::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 10px;
+     background: var(--accent-green);
+ }
+
+ .publication-card {
+     border: none;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     transition: all 0.3s ease;
+     margin-bottom: 2rem;
+     overflow: hidden;
+     border-left: 5px solid var(--primary-green);
+ }
+
+ .publication-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+ }
+
+ .card-img-top {
+     height: 200px;
+     object-fit: cover;
+     border-bottom: 3px solid var(--accent-green);
+ }
+
+ .badge-category {
+     background-color: var(--light-green);
+     color: var(--text-dark);
+     font-weight: 600;
+ }
+
+ .btn-green {
+     background-color: var(--primary-green);
+     color: white;
+     border: none;
+ }
+
+ .btn-green:hover {
+     background-color: var(--dark-green);
+     color: white;
+ }
+
+ .btn-outline-green {
+     border-color: var(--primary-green);
+     color: var(--primary-green);
+ }
+
+ .btn-outline-green:hover {
+     background-color: var(--primary-green);
+     color: white;
+ }
+
+ .filter-btn.active {
+     background-color: var(--primary-green);
+     color: white;
+ }
+
+ .featured-publication {
+     border: 3px solid var(--accent-green);
+ }
+
+ .accessibility-badge {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     background-color: var(--dark-green);
+     color: white;
+     padding: 5px 10px;
+     border-radius: 20px;
+     font-size: 0.8rem;
+ }
+
+ .pagination .page-item.active .page-link {
+     background-color: var(--primary-green);
+   
+ }
+
+ .pagination .page-link {
+     color: black;
  }
